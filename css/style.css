@@ -305,9 +305,9 @@ background-image: linear-gradient(180deg, #792a99 0%, #53136d 95%); */
     border-radius: 10px;
     padding: 40px;
     align-items: center;
-    margin: 0 400px;
+    /* margin: 0 400px; */
+    margin: 0 20%;
     font-size: 11px;
-
 } 
 
 .main-content-subtext-text{
@@ -368,6 +368,25 @@ background-image: linear-gradient(180deg, #792a99 0%, #53136d 95%); */
     font-size: 18px;
     list-style: none;
     margin-bottom: 20px;
+}
+
+.nft-list{
+    /* background-color: #00BFFF; */
+    text-align: left;
+    margin-left: 25%;
+    margin-bottom: 40px;
+}
+
+.nft-links:hover{
+    color: #000;
+    text-decoration: none;
+    border: 1px solid black;
+}
+
+.nft-links{
+    padding: 20px;
+    text-decoration: none;
+    color: #000;
 }
 
 .text-danger{
