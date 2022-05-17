@@ -1,61 +1,107 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="stylesheet" href="../css/about_style.css">
-    <link rel="stylesheet" href="../css/style.css">
-    <link rel="stylesheet" href="../css/bootstrap.css">
-    <link rel="stylesheet" href="../css/fontawesome.css">
-    <link rel="stylesheet" href="../css/fontawesome.min.css">
+        <link rel="stylesheet" href="../css/about_style.css" />
+        <link rel="stylesheet" href="../css/style.css" />
+        <link rel="stylesheet" href="../css/bootstrap.css" />
+        <link rel="stylesheet" href="../css/fontawesome.css" />
+        <link rel="stylesheet" href="../css/fontawesome.min.css" />
 
-    <link rel="shortcut icon" href="../images/logo (1).jpeg" type="image/x-icon">
+        <link
+            rel="shortcut icon"
+            href="../images/logo (1).jpeg"
+            type="image/x-icon"
+        />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Poppins:wght@200;300;500&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Poppins:wght@200;300;500&display=swap"
+            rel="stylesheet"
+        />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap" rel="stylesheet">
-    <title>About</title>
-</head>
-<body onload="myFunction()">
-    <div class="head">
-        <div class="row">
-            <div class="col-md-7">
-                <div class="logo-area">
-                    <div class="logo-img">
-                        <a href="../index.html" class="img--link">
-                            <img src="../images/logo.jpeg" alt="logo" class="logo-image">
-                            <h1 class="main-header">The NFT Academy</h1>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap"
+            rel="stylesheet"
+        />
+        <title>About</title>
+    </head>
+    <body onload="myFunction()">
+        <div class="head">
+            <div class="row">
+                <div class="col-md-7">
+                    <div class="logo-area">
+                        <div class="logo-img">
+                            <a href="../index.html" class="img--link">
+                                <img
+                                    src="../images/logo.jpeg"
+                                    alt="logo"
+                                    class="logo-image"
+                                />
+                                <h1 class="main-header">The NFT Academy</h1>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-5">
+                    <div class="nav">
+                        <ul class="nav-bar">
+                            <li class="nav-list">
+                                <a href="./pages/news.html">News</a>
+                            </li>
+                            <li class="nav-list">
+                                <a href="./pages/contact.html">Contact</a>
+                            </li>
+                            <li class="nav-list">
+                                <a href="./pages/about.html">About Us</a>
+                            </li>
+                            <li class="nav-list">
+                                <button id="day-night" class="btn btn-default">
+                                    <ion-icon name="sunny"></ion-icon>
+                                </button>
+                            </li>
+                            <li class="nav-list">
+                                <button id="user-face">
+                                    <ion-icon
+                                        name="person-circle-sharp"
+                                    ></ion-icon>
+                                </button>
+                            </li>
+                            <!-- <li class="menu-search-bar">
+                        <a class="search-label">
+                            <ion-icon name="search-outline"></ion-icon>
                         </a>
+                        <form id="searchform">
+                            <input type="text" placeholder="Search..." name="s" class="search-bar">
+                        </form>
+                    </li> -->
+                        </ul>
                     </div>
                 </div>
             </div>
-            <div class="col-md-5">
-                <div class="nav">
-                    <ul class="nav-bar">
-                        <li class="nav-list"><a href="../pages/news.html">News</a></li>
-                        <li class="nav-list"><a href="../pages/contact.html">Contact</a></li>
-                        <li class="nav-list"><a href="../pages/about.html">About Us</a></li>
-                        <li class="menu-search-bar">
-                            <a class="search-label"><ion-icon name="search-outline"></ion-icon></a>
-                            <form id="searchform">
-                                <input type="text" placeholder="Search..." name="s" class="search-bar">
-                            </form>
-                        </li>
-                    </ul>
-                </div>
-            </div>
         </div>
-    </div>
-    <div class="about-us">
-        <h1>Our Team:</h1>
-        
-    </div>
-    <script src="script.js"></script>
-</body>
+        <div class="about-us">
+            <h1>Our team:</h1>
+            <!-- Members:
+            Ankur
+            Aryan
+            Tanya
+        -->
+        </div>
+        <script src="script.js"></script>
+        <script
+            type="module"
+            src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+        ></script>
+        <script
+            nomodule
+            src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+        ></script>
+    </body>
 </html>
