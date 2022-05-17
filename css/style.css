@@ -1,22 +1,20 @@
 /* Root */
-*{
+* {
     margin: 0;
     padding: 0;
-    
+    box-sizing: border-box;
 }
 
-:root{
-    --sky-blue: #00BFFF;
-
+:root {
+    --sky-blue: #00bfff;
 }
 
-html{
+html {
     scroll-behavior: smooth;
 }
 
-body{
+body {
     overflow-x: hidden;
-    
 }
 /* Root ends */
 /* Loader */
@@ -33,105 +31,117 @@ body{
     border-top: 16px solid #3498db;
     -webkit-animation: spin 2s linear infinite;
     animation: spin 2s linear infinite;
-  }
-  
-  @-webkit-keyframes spin {
-    0% { -webkit-transform: rotate(0deg); }
-    100% { -webkit-transform: rotate(360deg); }
-  }
-  
-  @keyframes spin {
-    0% { transform: rotate(0deg); }
-    100% { transform: rotate(360deg); }
-  }
-/* Loader ends */
-#cont{
-    display: none;
-    
 }
-.head{
+
+@-webkit-keyframes spin {
+    0% {
+        -webkit-transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+/* Loader ends */
+#cont {
+    display: none;
+}
+.head {
     background-color: #0f0f0f;
     max-height: 13vh;
 }
-.head li{
+.head li {
     list-style: none;
     font-size: 18px;
     color: #e5e5e5;
-    
-
 }
 
-.logo-area{
+.logo-area {
     display: flex;
     align-items: center;
     width: 100vw;
-    -webkit-user-select: none;         
-    -moz-user-select: none; 
-    -ms-user-select: none; 
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
     user-select: none;
-
-
 }
+
+.sticky {
+    position: fixed;
+    top: 0;
+    /* padding-top: 60px; */
+    width: 100%;
+}
+
+#nav-area {
+    z-index: 1;
+}
+
 .nav,
-.nav-bar{
+.nav-bar {
     display: flex;
     padding-right: 5px;
     align-items: center;
     justify-content: right;
     min-height: 11vh;
-    
 }
 
-.nav li{
-    padding:0 8%;
+.nav li {
+    margin: 0 8%;
+    padding:  0 10%;
     color: #ccc;
 }
 
-.nav-list:hover{
-    
+.nav-list:hover {
     text-decoration: none;
 }
 
-.nav li a{
+.nav li a {
     color: #ccc;
     font-size: 16px;
 }
 
-.nav li a:hover{
+.nav li a:hover {
     text-decoration: none;
 }
 
-.menu-search-bar{
+.menu-search-bar {
     display: flex;
 }
 
-.search-label{
+.search-label {
     margin: 5px;
 }
 
-.search-bar{
+.search-bar {
     padding-left: 10px;
 }
 
-.logo-img{
+.logo-img {
     display: inline-block;
-
-
 }
 
-.img--link,.img--link:hover{
+.img--link,
+.img--link:hover {
     text-decoration: none;
 }
 
-.logo-image{
+.logo-image {
     border-radius: 50%;
     height: 12vh;
     margin-left: 30px;
     border: 5px solid black;
-    
 }
 
-.main-header{
+.main-header {
     display: inline-block;
     color: #e5e5e5;
     font-size: 36px;
@@ -140,11 +150,12 @@ body{
     /* margin-top: 20px; */
 }
 
-.body--header{
+.body--header {
     position: relative;
+    /* margin-top: 13vh; */
 }
 
-.mini-nft-cont{
+.mini-nft-cont {
     background-color: #bbb;
     width: 300px;
     height: 620px;
@@ -153,7 +164,7 @@ body{
     padding-top: 10px;
 }
 
-.nft-cont-text{
+.nft-cont-text {
     background-color: #eee;
     height: 300px;
     width: 280px;
@@ -164,33 +175,34 @@ body{
     opacity: 0.4;
 }
 
-.nft-text-head{
+.nft-text-head {
     color: #000;
 }
 
-.nft-codename{
+.nft-codename {
     font-size: 20px;
     margin: 0 10px;
 }
 
-.nft-imgs{
+.nft-imgs {
     width: 200px;
     height: 300px;
     margin-top: 10px;
 }
 
-.nft-img-container{
+.nft-img-container {
     margin-left: 50%;
     transform: translateX(-50%);
     margin-top: 5%;
     width: 70%;
 }
 
-.header-img{
+.header-img {
     width: 100%;
     opacity: 0.15;
     max-height: 87vh;
 }
+
 
 /* .nft-img{
     /* display: flex;
@@ -212,10 +224,25 @@ body{
     width: 450px;
 } */
 
-.header-img-text{
-    -webkit-user-select: none;     
-    -moz-user-select: none; 
-    -ms-user-select: none; 
+#header-img-text-cont{
+    top: 50%;
+    left: 5%;
+    transform: translate(5%,50%);
+}
+
+.night-mode-head{
+    box-shadow: 0px 0px 10px 4px #00bfff;
+    color: #333;
+    border: 1px solid #00bfff;
+    background-color: rgba(28, 228, 179, 0.95);
+    border-radius: 10px;
+    
+}
+
+#header-img-text {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
     user-select: none;
     position: absolute;
     bottom: 30%;
@@ -223,44 +250,49 @@ body{
     font-size: 18px;
     /* background-color: rgba(28, 229, 179, 0.05); */
     font-family: Poppins, sans-serif;
-    height: 220px;
-    width: 400px;
+    height: 250px;
+    width: 450px;
 }
 
-.head-text{
+.head-text {
     background-color: rgba(28, 229, 179, 0.05);
     /* height: 220px; */
     width: 400px;
     top: 50%;
     left: 50%;
-    transform: translateX(-50%,-50%);
+    transform: translateX(-50%, -50%);
     padding: 10px 30px;
 }
 
-.head-text-sub{
+.head-text-sub {
     font-size: 14px;
     width: 440px;
-    margin-bottom: 90px;
+    margin-bottom: 70px;
 }
 
-.goals{
+.goals {
     height: 100px;
+    margin-top: 30px;
     width: 200px;
     padding: 10px 15px;
-    color: #00BFFF;
+    color: #00bfff;
     border-radius: 5px;
     text-decoration: none;
-    border: 1px solid #00BFFF;
+    border: 1px solid #00bfff;
+    /* top: 10%;
+    left: 50%;
+    transform: translate(10%,50%); */
+    margin-left: 30px;
 }
 
-.goals:hover{
+.goals:hover {
     text-decoration: none;
-    color: #00BFFF;
+    color: #00bfff;
     box-shadow: 2px 2px 10px #444;
 }
 
 /* main content */
-.main--content-bg{
+.main--content-bg {
     text-align: center;
     padding-top: 5vh;
     /* opacity: 0.1; */
@@ -270,12 +302,12 @@ body{
 background-image: linear-gradient(180deg, #792a99 0%, #53136d 95%); */
 }
 
-.main--content{
+.main--content {
     /* opacity: 0.99;    */
-    font-family: Poppins, sans-serif; 
+    font-family: Poppins, sans-serif;
 }
 
-.main--head-bg{
+.main--head-bg {
     position: absolute;
     background-color: rgba(0, 0, 0, 0.7);
     margin: 10px 375px;
@@ -286,20 +318,18 @@ background-image: linear-gradient(180deg, #792a99 0%, #53136d 95%); */
     bottom: -80px;
 }
 
-.main--content h1{
+.main--content h1 {
     position: relative;
     /* font-family: serif, sans-serif; */
     font-weight: 500;
-    
+
     font-size: 38px;
     padding: 0 0 40px 0;
     margin-top: 25px;
     border-radius: 10px;
-
-    
 }
 
-.main-content-subtext{
+.main-content-subtext {
     background-color: #eeeddd;
     box-shadow: 0 0 30px #cc3e79;
     border-radius: 10px;
@@ -308,38 +338,37 @@ background-image: linear-gradient(180deg, #792a99 0%, #53136d 95%); */
     /* margin: 0 400px; */
     margin: 0 20%;
     font-size: 11px;
-} 
+}
 
-.main-content-subtext-text{
+.main-content-subtext-text {
     /* font-family: Poppins, sans-serif; */
     font-weight: 400;
     font-size: 18px;
     margin-bottom: 20px;
 }
 
-.bottom{
+.bottom {
     margin-bottom: 30px;
 }
 
-.main-content-subtext-button{
+.main-content-subtext-button {
     margin-top: 320px;
     /* height: 50px;
     width: 200px; */
     padding: 10px 15px;
-    background-color: #00BFFF;
+    background-color: #00bfff;
     color: #000;
     text-decoration: none;
-    border: 1px solid #00BFFF;
-    
+    border: 1px solid #00bfff;
 }
 
-.main-content-subtext-button:hover{
+.main-content-subtext-button:hover {
     text-decoration: none;
     color: #000;
-    box-shadow: 0px 0px 1px 1px #00BFFF;
+    box-shadow: 0px 0px 1px 1px #00bfff;
 }
 
-.main--head{
+.main--head {
     margin: 20px 0 -10px 0;
     color: #deeeee;
     animation: fadeIn ease 5s;
@@ -347,54 +376,54 @@ background-image: linear-gradient(180deg, #792a99 0%, #53136d 95%); */
     animation-fill-mode: forwards;
 }
 
-.main--head:hover{
+.main--head:hover {
     text-decoration: underline;
-    -webkit-user-select: none;         
-    -moz-user-select: none; 
-    -ms-user-select: none; 
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
     user-select: none;
 }
 
-@keyframes fadeIn{
-    0%{
+@keyframes fadeIn {
+    0% {
         opacity: 0;
     }
-    100%{
+    100% {
         opacity: 1;
     }
 }
 
-.main-content-li{
+.main-content-li {
     font-size: 18px;
     list-style: none;
     margin-bottom: 20px;
 }
 
-.nft-list{
+.nft-list {
     /* background-color: #00BFFF; */
     text-align: left;
     margin-left: 25%;
     margin-bottom: 40px;
 }
 
-.nft-links:hover{
+.nft-links:hover {
     color: #000;
     text-decoration: none;
     border: 1px solid black;
 }
 
-.nft-links{
+.nft-links {
     padding: 20px;
     text-decoration: none;
     color: #000;
 }
 
-.text-danger{
+.text-danger {
     margin-left: 20px;
 }
 
 .main--head-sub,
-.main--head-sub-sub{
+.main--head-sub-sub {
     font-size: 22px;
     margin-bottom: 10px;
     font-family: roboto, sans-serif;
@@ -402,56 +431,56 @@ background-image: linear-gradient(180deg, #792a99 0%, #53136d 95%); */
     color: #aaa;
 }
 
-.video-language{
+.video-language {
     font-size: 18px;
-    color: #A7AC10;
+    color: #a7ac10;
     margin: 20px 0;
 }
 
-.video-player{
+.video-player {
+    width: 720px;
     aspect-ratio: 16/9;
-    height: 550px;
-    border-radius: 10px;
+    /* border-radius: 10px; */
 }
 
-#newsletter{
+#newsletter {
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.newsletter{
+.newsletter {
     background-color: #deeeee;
-    height: 400px;
+    min-height: 400px;
     width: 50%;
     text-justify: center;
     border-radius: 10px;
     border: 2px solid #972c58;
     box-shadow: 0px 0px 30px #1cef54;
-    margin: 50px 0;
-
+    margin: 50px 0 0 0;
+    padding: 20px 0;
 }
 
-.newsletter-head{
+.newsletter-head {
     color: #242323;
 }
 
-.newsletter-subhead{
+.newsletter-subhead {
     padding: 0 20px;
     text-align: center;
 }
 
-.newsletter-subscribe{
+.newsletter-subscribe {
     padding: 20px 0;
 }
 
-.gneushk{
+.gneushk {
     width: 70%;
     height: 50px;
     color: #8a8a8a;
 }
 
-.submit{
+.submit {
     width: 70%;
     height: 40px;
     border-radius: 5px;
@@ -459,11 +488,35 @@ background-image: linear-gradient(180deg, #792a99 0%, #53136d 95%); */
     border: 0;
     background-color: #a4508b;
     background-image: linear-gradient(326deg, #a4508b 0%, #5f0a87 74%);
-
 }
-
+/* 
 .submit:active{
-    /* border: 0; */
+    
+} */
+
+#day-night {
+    /* background-color: #000; */
+    color: yellow;
+    font-size: 25px;
+    border: 0;
 }
 
+#day-night:active {
+    border: 0.001px solid blue;
+}
+
+#user-face{
+    background-color: initial;
+    color: #fff;
+    border: 0;
+    font-size: 30px;
+    top: 5%;
+    transform: translateY(5%);
+}
+
+@media only screen and (max-width: 980px) {
+    .newsletter {
+        width: 720px;
+    }
+}
 /* main content end */
