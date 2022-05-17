@@ -1,213 +1,393 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="./css/bootstrap.css">
-    <link rel="stylesheet" href="./css/fontawesome.css">
+        <link rel="stylesheet" href="./css/style.css" />
+        <link rel="stylesheet" href="./css/bootstrap.css" />
+        <link rel="stylesheet" href="./css/fontawesome.css" />
 
-    <link rel="shortcut icon" href="./images/logo (1).jpeg" type="image/x-icon">
+        <link
+            rel="shortcut icon"
+            href="./images/logo (1).jpeg"
+            type="image/x-icon"
+        />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Poppins:wght@200;300;500&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&family=Poppins:wght@200;300;500&display=swap"
+            rel="stylesheet"
+        />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap" rel="stylesheet">
-    <title>The NFT Academy</title>
-</head>
-<body onload="myFunction()">
-    <div id="loader"></div> <!-- loader -->
-    <div id="cont">
-        <div class="head">
-            <div class="row">
-                <div class="col-md-7">
-                    <div class="logo-area">
-                        <div class="logo-img">
-                            <a href="./index.html" class="img--link">
-                                <img src="./images/logo.jpeg" alt="logo" class="logo-image">
-                                <h1 class="main-header">The NFT Academy</h1>
-                            </a>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300;400;700&display=swap"
+            rel="stylesheet"
+        />
+        <title>The NFT Academy</title>
+    </head>
+
+    <body onload="myFunction()">
+        <div id="loader"></div>
+        <!-- loader -->
+        <div id="cont">
+            <div class="head" id="nav-area">
+                <div class="row">
+                    <div class="col-md-7">
+                        <div class="logo-area">
+                            <div class="logo-img">
+                                <a href="./index.html" class="img--link">
+                                    <img
+                                        src="./images/logo.jpeg"
+                                        alt="logo"
+                                        class="logo-image"
+                                    />
+                                    <h1 class="main-header">The NFT Academy</h1>
+                                </a>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-md-5">
-                    <div class="nav">
-                        <ul class="nav-bar">
-                            <li class="nav-list"><a href="./pages/news.html">News</a></li>
-                            <li class="nav-list"><a href="./pages/contact.html">Contact</a></li>
-                            <li class="nav-list"><a href="./pages/about.html">About Us</a></li>
-                            <li class="menu-search-bar">
-                                <a class="search-label"><ion-icon name="search-outline"></ion-icon></a>
+                    <div class="col-md-5">
+                        <div class="nav">
+                            <ul class="nav-bar">
+                                <li class="nav-list">
+                                    <a href="./pages/news.html">News</a>
+                                </li>
+                                <li class="nav-list">
+                                    <a href="./pages/contact.html">Contact</a>
+                                </li>
+                                <li class="nav-list">
+                                    <a href="./pages/about.html">About Us</a>
+                                </li>
+                                <li class="nav-list">
+                                    <button
+                                        id="day-night"
+                                        class="btn btn-default"
+                                    >
+                                        <ion-icon name="sunny"></ion-icon>
+                                    </button>
+                                </li>
+                                <li class="nav-list">
+                                    <button id="user-face">
+                                        <ion-icon
+                                            name="person-circle-sharp"
+                                        ></ion-icon>
+                                    </button>
+                                </li>
+                                <!-- <li class="menu-search-bar">
+                                <a class="search-label">
+                                    <ion-icon name="search-outline"></ion-icon>
+                                </a>
                                 <form id="searchform">
                                     <input type="text" placeholder="Search..." name="s" class="search-bar">
                                 </form>
-                            </li>
-                        </ul>
+                            </li> -->
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="body--header" id="body--header">
+                <img
+                    src="./images/head2.png"
+                    alt="thumb photo"
+                    class="header-img"
+                />
+                <div id="header-img-text">
+                    <div id="header-img-text-cont">
+                        <p class="head-text">
+                            We educate you on NFTs and NFT related cryptos and
+                            Metaverse
+                        </p>
+                        <p class="head-text-sub">
+                            Your all-in-one place to learn about NFTs and
+                            metaverse.
+                        </p>
+                    </div>
+                    <a href="#our-goals" class="goals">Our Goal</a>
+                </div>
+            </div>
+            <div id="main">
+                <div class="main--content-bg">
+                    <div class="main--content">
+                        <h1 class="main--head-bg"></h1>
+                        <h1 onload="fadeIn()" id="fadeIn" class="main--head">
+                            Hello there!!
+                        </h1>
+                        <div class="main-content-subtext">
+                            <h2 class="main-content-subtext-text bottom">
+                                Want to learn more about NFTs and Metaverse?
+                            </h2>
+                            <h2 class="main-content-subtext-text">
+                                Want to own NFTs and digital assets like these
+                                without getting scammed??
+                            </h2>
+                        </div>
+                        <div class="nft-img-container">
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <div class="mini-nft-cont">
+                                        <div class="nft-imgs">
+                                            <img
+                                                src="./images/pp1.png"
+                                                alt="nft images"
+                                            />
+                                        </div>
+                                        <div class="nft-cont-text">
+                                            <h1 class="nft-text-head">
+                                                boredape
+                                            </h1>
+                                            <h3 class="nft-codename">
+                                                Lorem ipsum dolor sit amet
+                                                consectetur adipisicing elit.
+                                                Voluptate molestias earum
+                                                dignissimos error quidem
+                                                expedita.
+                                            </h3>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="mini-nft-cont">
+                                        <div class="nft-imgs">
+                                            <img
+                                                src="./images/pp1a.png"
+                                                alt="nft images"
+                                            />
+                                        </div>
+                                        <div class="nft-cont-text">
+                                            <h1 class="nft-text-head">
+                                                cryptopunk
+                                            </h1>
+                                            <h3 class="nft-codename">
+                                                Lorem ipsum dolor sit amet
+                                                consectetur adipisicing elit.
+                                                Voluptate molestias earum
+                                                dignissimos error quidem
+                                                expedita.
+                                            </h3>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="mini-nft-cont">
+                                        <div class="nft-imgs">
+                                            <img
+                                                src="./images/pp1aa.png"
+                                                alt="nft images"
+                                            />
+                                        </div>
+                                        <div class="nft-cont-text">
+                                            <h1 class="nft-text-head">
+                                                vee friends
+                                            </h1>
+                                            <h3 class="nft-codename">
+                                                Lorem ipsum dolor sit amet
+                                                consectetur adipisicing elit.
+                                                Voluptate molestias earum
+                                                dignissimos error quidem
+                                                expedita.
+                                            </h3>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <br />
+                        <div class="nft-introduction">
+                            <h1 class="main--head-bg"></h1>
+                            <h1 class="main--head">
+                                But first, lets take a look at what are NFTs
+                            </h1>
+                            <div class="main-content-subtext">
+                                <h2 class="main-content-subtext-text bottom">
+                                    NFT, short for Non-Fungible token is a
+                                    unique data piece stored using Blockchain
+                                    technology. It cannot be copied, thus making
+                                    it so special and seperates it from normal
+                                    JPEG images which can be downloaded from the
+                                    internet for free.
+                                </h2>
+                                <h2 class="main-content-subtext-text bottom">
+                                    It was launched in 2017 by Ethereum(ETH) and
+                                    has been no stranger to people with it
+                                    becoming a sensation between digital artists
+                                    and younger generation people since late
+                                    2020
+                                </h2>
+                                <h2 class="main-content-subtext-text bottom">
+                                    Some of the most popular NFT marketplaces
+                                    are:
+                                </h2>
+                                <ul>
+                                    <li class="main-content-li nft-list">
+                                        <a
+                                            class="nft-links"
+                                            href="https://www.opensea.io"
+                                            target="_blank"
+                                            >&rarr; Opensea.io</a
+                                        >
+                                    </li>
+                                    <li class="main-content-li nft-list">
+                                        <a
+                                            class="nft-links"
+                                            href="https://rarible.com"
+                                            target="_blank"
+                                            >&rarr; rarible.com</a
+                                        >
+                                    </li>
+                                </ul>
+                                <!-- make changes here!! -->
+                                <a
+                                    class="main-content-subtext-button"
+                                    href="./pages/test.html"
+                                    >See more &rarr;</a
+                                >
+                            </div>
+                        </div>
+
+                        <br />
+                        <h1 class="main--head-bg"></h1>
+                        <h1 class="main--head">Well, You are out of Luck.</h1>
+                        <div class="main-content-subtext">
+                            <h2 class="main-content-subtext-text bottom">
+                                Over 90% of the information available on the
+                                internet is <b>FAKE</b>
+                            </h2>
+                            <h2 class="main-content-subtext-text bottom">
+                                And whatever information is available, It's too
+                                complicated.
+                            </h2>
+                            <h2 class="main-content-subtext-text">
+                                Misinformation and lack of information is highly
+                                risky when dealing with money. Thus, it's not
+                                worth risking your hard earned money on some
+                                market where you will most likely lose money
+                                without proper research.
+                            </h2>
+                        </div>
+                        <br />
+                        <h1 class="main--head-bg"></h1>
+                        <h1 class="main--head" id="our-goals">Our Goal:</h1>
+                        <div class="main-content-subtext">
+                            <ul>
+                                <li class="main-content-li">
+                                    <ion-icon name="arrow-forward"></ion-icon>
+                                    Educate people like you on NFTs and
+                                    Metaverse so that you know what you are
+                                    doing when you buy NFTs
+                                </li>
+                                <li class="main-content-li">
+                                    <ion-icon name="arrow-forward"></ion-icon>
+                                    Buy Cryptos, NFTs and be involved in
+                                    Metaverse like a professional.
+                                </li>
+                                <li class="main-content-li">
+                                    <ion-icon name="arrow-forward"></ion-icon
+                                    >Know more about marketplace so that you
+                                    don't lose money and leave as a happy person
+                                    at the end of the day
+                                </li>
+                                <li class="main-content-li">
+                                    <ion-icon name="arrow-forward"></ion-icon
+                                    >Get info on Cryptos, NFTs and Metaverse
+                                    that will help you in the future
+                                </li>
+                                <li class="main-content-li text-danger">
+                                    <ion-icon name="warning-outline"></ion-icon>
+                                    <b>WARNING:</b> This isn't a get rich quick
+                                    scheme. Do your research as well as it is a
+                                    high risk market
+                                </li>
+                            </ul>
+                        </div>
+                        <br />
+                        <div id="newsletter">
+                            <div class="newsletter">
+                                <h1 class="newsletter-head">
+                                    Excited for our future content/blogs??
+                                </h1>
+                                <h3 class="newsletter-subhead">
+                                    Subscribe to our weekly newsletter so you
+                                    don't miss out on the latest updates
+                                    regarding NFTs and Metaverse
+                                </h3>
+                                <form class="newsletter-subscribe" id="">
+                                    <input
+                                        type="text"
+                                        class="search-bar gneushk"
+                                        placeholder="Enter your email..."
+                                        name="email"
+                                    />
+                                </form>
+                                <button type="submit" class="submit">
+                                    Submit
+                                </button>
+                            </div>
+                        </div>
+                        <br />
+                        <div class="watch-video">
+                            <h1 class="main--head-bg"></h1>
+                            <h1 class="main--head">
+                                Here are some videos on NFTs
+                            </h1>
+                            <div class="main-content-subtext">
+                                <h2 class="main--head-sub">
+                                    You can watch these videos on NFTs for
+                                    reference
+                                </h2>
+                                <h3 class="main--head-sub-sub">
+                                    Here are 2 videos from Garyvee and Ankur
+                                    Warikoo in English and Hindi respectively.
+                                    Hopefully these videos help you to know
+                                    more, since knowledge is a necessity here.
+                                </h3>
+                            </div>
+
+                            <!-- <div class="slideshow-container">
+    
+                            <div class="mySlides1">
+                                <iframe class="video-player" src="https://www.youtube.com/embed/4se4_ZqkcKw"
+                                    title="YouTube video player" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                    allowfullscreen>
+                                </iframe>
+                            </div>
+    
+                            <div class="mySlides1">
+                                <iframe class="video-player" src="https://www.youtube.com/embed/as7acW3B2jA"
+                                    title="YouTube video player" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                    allowfullscreen>
+                                </iframe>
+                            </div>
+    
+                            <a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
+                            <a class="next" onclick="plusSlides(1, 0)">&#10095;</a>
+                        </div> -->
+                            <!-- problem with copyright in the video -->
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-            
-        <div class="body--header">
-            <img src="./images/head2.png" alt="thumb photo" class="header-img">
-            <!-- <div class="nft-img">
-                <a href="https://opensea.io/assets/0xbc4ca0eda7647a8ab7c2061c2e118a18a936f13d/4671">
-                    <img src="./images/unnamed.png" alt="nft img">
-                    <!- <br> --
-                    <p>Bored ape</p>
-                </a>
-                
-            </div> -->
-            <div class="header-img-text">
-                <p class="head-text">We educate you on NFTs and NFT related cryptos and Metaverse</p>
-                <p class="head-text-sub">Your all-in-one place to learn about NFTs and metaverse.</p>
-                <a href="#our-goals" class="goals">Our Goal</a>
-            </div>
 
-        </div>
-        <div class="main--content-bg" >
-            <div class="main--content">
-                <h1 class="main--head-bg"></h1>
-                <h1 onload="fadeIn()" id="fadeIn" class="main--head">Hello there!!</h1>
-                <div class="main-content-subtext">
-                    <h2 class='main-content-subtext-text bottom'>Want to learn more about NFTs and Metaverse?</h2>
-                    <h2 class='main-content-subtext-text'>Want to own NFTs and digital assets like these without getting scammed??</h2>                    
-                </div>
-                <div class="nft-img-container">
-                    <div class="row">
-                        <div class="col-md-4">
-                            <div class="mini-nft-cont">
-                                <div class="nft-imgs">
-                                    <img src="./images/pp1.png" alt="nft images">
-                                </div>
-                                <div class="nft-cont-text">
-                                    <h1 class="nft-text-head">boredape</h1>
-                                    <h3 class="nft-codename">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate molestias earum dignissimos error quidem expedita.</h3>
-
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-md-4">
-                            <div class="mini-nft-cont">
-                                <div class="nft-imgs">
-                                    <img src="./images/pp1a.png" alt="nft images">
-                                </div>
-                                <div class="nft-cont-text">
-                                    <h1 class="nft-text-head">cryptopunk</h1>
-                                    <h3 class="nft-codename">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate molestias earum dignissimos error quidem expedita.</h3>
-                                </div>
-                                
-                            </div>
-                        </div>
-                        <div class="col-md-4">
-                            <div class="mini-nft-cont">
-                                <div class="nft-imgs">
-                                    <img src="./images/pp1aa.png" alt="nft images">
-                                </div>
-                                <div class="nft-cont-text">
-                                    <h1 class="nft-text-head">vee friends</h1>
-                                    <h3 class="nft-codename">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate molestias earum dignissimos error quidem expedita.</h3>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <br>
-                <div class="nft-introduction">
-                    <h1 class="main--head-bg"></h1>
-                    <h1 class="main--head">But first, lets take a look at what are NFTs</h1>
-                    <div class="main-content-subtext">
-                        <h2 class="main-content-subtext-text bottom">NFT, short for Non-Fungible token is a unique data piece stored using Blockchain technology. It cannot be copied, thus making it so special and seperates it from normal JPEG images which can be downloaded from the internet for free.</h2>
-                        <h2 class="main-content-subtext-text bottom">It was launched in 2017 by Ethereum(ETH) and has been no stranger to people with it becoming a sensation between digital artists and younger generation people since late 2020</h2>
-                        <h2 class="main-content-subtext-text bottom">Some of the most popular NFT marketplaces are:</h2>
-                        <ul>
-                            <li class="main-content-li nft-list"><a class="nft-links" href="https://www.opensea.io" target="_blank">&rarr; Opensea.io</a></li>
-                            <li class="main-content-li nft-list"><a class="nft-links" href="https://rarible.com" target="_blank">&rarr; rarible.com</a></li>
-                        </ul> <!-- make changes here!! -->
-                        <a class="main-content-subtext-button" href="./pages/test.html">See more &rarr;</a>
-                    </div>
-                </div>
-                
-                <br>
-                <h1 class="main--head-bg"></h1>
-                <h1 class="main--head">Well, You are out of Luck.</h1>
-                <div class="main-content-subtext">
-                    <h2 class="main-content-subtext-text bottom">Over 90% of the information available on the internet is <b>FAKE</b></h2>
-                    <h2 class="main-content-subtext-text bottom">And whatever information is available, It's too complicated.</h2>
-                    <h2 class="main-content-subtext-text">Misinformation and lack of information is highly risky when dealing with money. Thus, it's not worth risking your hard earned money on some market where you will most likely lose money without proper research.</h2>
-                </div>
-                <br>
-                <h1 class="main--head-bg"></h1>
-                <h1 class="main--head" id="our-goals">Our Goal:</h1>
-                <div class="main-content-subtext">
-                    <ul>
-                        <li class="main-content-li"><ion-icon name="arrow-forward"></ion-icon> Educate people like you on NFTs and Metaverse so that you know what you are doing when you buy NFTs</li>
-                        <li class="main-content-li"><ion-icon name="arrow-forward"></ion-icon> Buy Cryptos, NFTs and be involved in Metaverse like a professional.</li>
-                        <li class="main-content-li"><ion-icon name="arrow-forward"></ion-icon>Know more about marketplace so that you don't lose money and leave as a happy person at the end of the day</li>
-                        <li class="main-content-li"><ion-icon name="arrow-forward"></ion-icon>Get info on Cryptos, NFTs and Metaverse that will help you in the future</li>
-                        <li class="main-content-li text-danger"><ion-icon name="warning-outline"></ion-icon> <b>WARNING:</b> This isn't a get rich quick scheme. Do your research as well as it is a high risk market</li>
-                    </ul>
-                </div>
-                <br>
-                <div id="newsletter">
-                    <div class="newsletter">
-                        <h1 class="newsletter-head">Excited for our future content/blogs??</h1>
-                        <h3 class="newsletter-subhead">Subscribe to our weekly newsletter so you don't miss out on the latest updates regarding NFTs and Metaverse</h3>
-                        <form class="newsletter-subscribe" id="">
-                            <input type="text" class="search-bar gneushk" placeholder="Enter your email..." name="email">
-                        </form>
-                        <button type="submit" class="submit">Submit</button>
-                    </div>
-                </div>
-                <br>
-                <div class="watch-video">
-                    <h1 class="main--head-bg"></h1>
-                    <h1 class="main--head">Here are some videos on NFTs</h1>
-                    <div class="main-content-subtext">
-                        <h2 class="main--head-sub">You can watch these videos on NFTs for reference</h2>
-                        <h3 class="main--head-sub-sub">Here are 2 videos from Garyvee and Ankur Warikoo in English and Hindi respectively. Hopefully these videos help you to know more, since knowledge is a necessity here.</h3>
-                    </div>
-                    <!-- from the man himself Gary Vaynerchuk (Gary Vee) -->
-                    <h3 class="main-content-subtext-text bottom video-language">In English:-</h3>
-                    <iframe
-                        class="video-player"
-                        src="https://www.youtube.com/embed/4se4_ZqkcKw" 
-                        title="YouTube video player"
-                        frameborder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-                        allowfullscreen
-                    >
-                    </iframe>
-                    <h3 class="main-content-subtext-text bottom video-language">In Hindi:-</h3>
-                    <iframe  
-                        class="video-player"
-                        src="https://www.youtube.com/embed/as7acW3B2jA" 
-                        title="YouTube video player" 
-                        frameborder="0" 
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-                        allowfullscreen
-                    >
-                    </iframe>
-                    <!-- https://www.youtube.com/embed/4se4_ZqkcKw -->
-                    
-                </div>
-            </div>
-        </div>
-        
-    </div>
-
-    <script src="script.js"></script>
-    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-
-</body>
+        <script src="script.js"></script>
+        <script
+            type="module"
+            src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+        ></script>
+        <script
+            nomodule
+            src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+        ></script>
+    </body>
 </html>
-
 
 <!-- comments -->
 <!-- 
@@ -217,4 +397,7 @@
     3. carousel YT videos and NFT images after "Hello there!" section
     4. More useful linking buttons.
 
+ -->
+<!-- 
+    make changes at line 77
  -->
