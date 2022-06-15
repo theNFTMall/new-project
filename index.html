@@ -8,6 +8,10 @@
         <link rel="stylesheet" href="./css/style.css" />
         <link rel="stylesheet" href="./css/bootstrap.css" />
         <link rel="stylesheet" href="./css/fontawesome.css" />
+        <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"/>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/> -->
 
         <link
             rel="shortcut icon"
@@ -69,10 +73,14 @@
                                         class="btn btn-default"
                                     >
                                         <ion-icon name="sunny"></ion-icon>
+                                        <!-- <img src="./images/sunny.svg" alt="Sunny"> -->
                                     </button>
                                 </li>
                                 <li class="nav-list">
-                                    <button id="user-face">
+                                    <button 
+                                        id="user-face"
+                                        class="btn btn-default"
+                                    >
                                         <ion-icon
                                             name="person-circle-sharp"
                                         ></ion-icon>
@@ -105,11 +113,11 @@
                             Metaverse
                         </p>
                         <p class="head-text-sub">
-                            Your all-in-one place to learn about NFTs and
+                             Your all-in-one place to learn about NFTs and
                             metaverse.
                         </p>
                     </div>
-                    <a href="#our-goals" class="goals">Our Goal</a>
+                    <a href="#our-goals" id="goals-button" class="goals">Our Goal</a>
                 </div>
             </div>
             <div id="main">
@@ -136,6 +144,7 @@
                                             <img
                                                 src="./images/pp1.png"
                                                 alt="nft images"
+                                                id="nft-imgs-1"
                                             />
                                         </div>
                                         <div class="nft-cont-text">
@@ -143,11 +152,7 @@
                                                 boredape
                                             </h1>
                                             <h3 class="nft-codename">
-                                                Lorem ipsum dolor sit amet
-                                                consectetur adipisicing elit.
-                                                Voluptate molestias earum
-                                                dignissimos error quidem
-                                                expedita.
+                                                #3749
                                             </h3>
                                         </div>
                                     </div>
@@ -156,20 +161,17 @@
                                     <div class="mini-nft-cont">
                                         <div class="nft-imgs">
                                             <img
-                                                src="./images/pp1a.png"
+                                                src="./images/pp2.jpeg"
                                                 alt="nft images"
+                                                id="nft-imgs-2"
                                             />
                                         </div>
                                         <div class="nft-cont-text">
                                             <h1 class="nft-text-head">
-                                                cryptopunk
+                                                cryptopunks
                                             </h1>
                                             <h3 class="nft-codename">
-                                                Lorem ipsum dolor sit amet
-                                                consectetur adipisicing elit.
-                                                Voluptate molestias earum
-                                                dignissimos error quidem
-                                                expedita.
+                                                #448
                                             </h3>
                                         </div>
                                     </div>
@@ -180,18 +182,15 @@
                                             <img
                                                 src="./images/pp1aa.png"
                                                 alt="nft images"
+                                                id="nft-imgs-3"
                                             />
                                         </div>
                                         <div class="nft-cont-text">
                                             <h1 class="nft-text-head">
-                                                vee friends
+                                                VeeFriends
                                             </h1>
                                             <h3 class="nft-codename">
-                                                Lorem ipsum dolor sit amet
-                                                consectetur adipisicing elit.
-                                                Voluptate molestias earum
-                                                dignissimos error quidem
-                                                expedita.
+                                                Limited Diamond ape art
                                             </h3>
                                         </div>
                                     </div>
@@ -246,8 +245,9 @@
                                 <a
                                     class="main-content-subtext-button"
                                     href="./pages/test.html"
-                                    >See more &rarr;</a
                                 >
+                                    See more &rarr;
+                                </a>
                             </div>
                         </div>
 
@@ -306,7 +306,7 @@
                                 </li>
                             </ul>
                         </div>
-                        <br />
+
                         <div id="newsletter">
                             <div class="newsletter">
                                 <h1 class="newsletter-head">
@@ -330,7 +330,7 @@
                                 </button>
                             </div>
                         </div>
-                        <br />
+                        
                         <div class="watch-video">
                             <h1 class="main--head-bg"></h1>
                             <h1 class="main--head">
@@ -375,9 +375,137 @@
                     </div>
                 </div>
             </div>
+            <footer class="site-footer">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-12 col-md-6">
+                            <h6>About</h6>
+                            <p class="text-justify">
+                                Scanfcode.com <i>CODE WANTS TO BE SIMPLE </i> is an
+                                initiative to help the upcoming programmers with the
+                                code. Scanfcode focuses on providing the most
+                                efficient code or snippets as the code wants to be
+                                simple. We will help programmers build up concepts
+                                in different programming languages that include C,
+                                C++, Java, HTML, CSS, Bootstrap, JavaScript, PHP,
+                                Android, SQL and Algorithm.
+                            </p>
+                        </div>
+    
+                        <div class="col-xs-6 col-md-3">
+                            <h6>Categories</h6>
+                            <ul class="footer-links">
+                                <li>
+                                    <a
+                                        href="http://scanfcode.com/category/c-language/"
+                                        >lorem ipsum</a
+                                    >
+                                </li>
+                                <li>
+                                    <a
+                                        href="http://scanfcode.com/category/front-end-development/"
+                                        >lorem ipsum</a
+                                    >
+                                </li>
+                                <li>
+                                    <a
+                                        href="http://scanfcode.com/category/back-end-development/"
+                                        >lorem ipsum</a
+                                    >
+                                </li>
+                                <li>
+                                    <a
+                                        href="http://scanfcode.com/category/java-programming-language/"
+                                        >lorem ipsum</a
+                                    >
+                                </li>
+                                <li>
+                                    <a href="http://scanfcode.com/category/android/"
+                                        >lorem ipsum</a
+                                    >
+                                </li>
+                                <li>
+                                    <a
+                                        href="http://scanfcode.com/category/templates/"
+                                        >lorem ipsum</a
+                                    >
+                                </li>
+                            </ul>
+                        </div>
+    
+                        <div class="col-xs-6 col-md-3">
+                            <h6>Quick Links</h6>
+                            <ul class="footer-links">
+                                <li>
+                                    <a href="http://scanfcode.com/about/"
+                                        >About Us</a
+                                    >
+                                </li>
+                                <li>
+                                    <a href="http://scanfcode.com/contact/"
+                                        >Contact Us</a
+                                    >
+                                </li>
+                                <li>
+                                    <a
+                                        href="http://scanfcode.com/contribute-at-scanfcode/"
+                                        >Contribute</a
+                                    >
+                                </li>
+                                <li>
+                                    <a href="http://scanfcode.com/privacy-policy/"
+                                        >Privacy Policy</a
+                                    >
+                                </li>
+                                <li>
+                                    <a href="http://scanfcode.com/sitemap/"
+                                        >Sitemap</a
+                                    >
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <hr />
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-8 col-sm-6 col-xs-12">
+                            <p class="copyright-text">
+                                Copyright &copy; 2017 All Rights Reserved by
+                                <a href="#">Scanfcode</a>.
+                            </p>
+                        </div>
+    
+                        <div class="col-md-4 col-sm-6 col-xs-12">
+                            <ul class="social-icons">
+                                <li>
+                                    <a class="facebook" href="#"
+                                        ><i class="fa fa-facebook"></i
+                                    ></a>
+                                </li>
+                                <li>
+                                    <a class="twitter" href="#"
+                                        ><i class="fa fa-twitter"></i
+                                    ></a>
+                                </li>
+                                <li>
+                                    <a class="dribbble" href="#"
+                                        ><i class="fa fa-dribbble"></i
+                                    ></a>
+                                </li>
+                                <li>
+                                    <a class="linkedin" href="#"
+                                        ><i class="fa fa-linkedin"></i
+                                    ></a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </footer> 
         </div>
 
-        <script src="script.js"></script>
+        <script src="./Js/script.js"></script>
         <script
             type="module"
             src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
@@ -386,6 +514,7 @@
             nomodule
             src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
         ></script>
+        
     </body>
 </html>
 
@@ -399,5 +528,5 @@
 
  -->
 <!-- 
-    make changes at line 77
+    
  -->
