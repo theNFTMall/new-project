@@ -6,7 +6,7 @@ let bool = false;
 let main = document.getElementById("main");
 const navArea = document.getElementById("nav-area");
 const headerImgText = document.getElementById('header-img-text')
-
+const goalButton = document.getElementById('goals-button')
 
 function myFunction() {
     customLoader = setTimeout(showPage, 2000);
@@ -37,16 +37,19 @@ const show = () => {
 dayNight.addEventListener("click", () => {
     if (!bool) {
         dayNight.innerHTML = '<ion-icon name="moon"></ion-icon>';
+        dayNight.style.color = '#fff'
         bool = true;
         document.body.style.backgroundColor = "#000";
         headerImgText.classList.add('night-mode-head')
+        goalButton.classList.add('night-mode-button')
     } else {
         dayNight.innerHTML = '<ion-icon name="sunny"></ion-icon>';
+        dayNight.style.color = 'yellow'
         bool = false;
         document.body.style.backgroundColor = "#fff";
         headerImgText.classList.remove('night-mode-head')
+        goalButton.classList.remove('night-mode-button')
     }
-    console.log(dayNight.innerHTML);
 });
 
 window.onscroll = () => {
@@ -57,4 +60,3 @@ window.onscroll = () => {
         navArea.classList.remove("sticky");
     }
 };
-
